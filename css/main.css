@@ -15,11 +15,12 @@
  *  11. about
  *  12. resume
  *  13. portfolio
- *  14. call-to-action section
- *  15. services
- *  16. certificate
- *  17. contact
- *  18. footer
+ *  14. ctf
+ *  15. call-to-action section
+ *  16. services
+ *  17. certificate
+ *  18. contact
+ *  19. footer
  *
  * =================================================================== 
  */
@@ -1906,6 +1907,112 @@ header{
 	}
 }
 
+/** 
+ * ===================================================================
+ * 14. ctf - (_layout.scss)
+ *
+ * ------------------------------------------------------------------- 
+ */
+ #ctf {
+	padding-top: 12rem;
+	padding-bottom: 12rem;
+}
+#ctf .folio-item {
+	padding: 0;
+	border: 3px solid white;
+	border-radius: 15px;
+	position: relative;
+	overflow: hidden;
+}
+#ctf .folio-item img {
+	vertical-align: middle;
+	-moz-transition: all 0.5s ease-in-out;
+	-o-transition: all 0.5s ease-in-out;
+	-webkit-transition: all 0.5s ease-in-out;
+	-ms-transition: all 0.5s ease-in-out;
+	transition: all 0.5s ease-in-out;
+}
+
+#ctf .overlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: transparent;
+	-moz-transition: all 0.5s ease-in-out;
+	-o-transition: all 0.5s ease-in-out;
+	-webkit-transition: all 0.5s ease-in-out;
+	-ms-transition: all 0.5s ease-in-out;
+	transition: all 0.5s ease-in-out;
+}
+
+#ctf .folio-item-table {
+	display: table;
+	width: 100%;
+	height: 100%;
+}
+#ctf .folio-item-cell {
+	display: table-cell;
+	vertical-align: middle;
+	text-align: center;
+	-moz-transition: all 0.5s ease-in-out;
+	-o-transition: all 0.5s ease-in-out;
+	-webkit-transition: all 0.5s ease-in-out;
+	-ms-transition: all 0.5s ease-in-out;
+	transition: all 0.5s ease-in-out;
+	position: relative;
+	left: -100%;
+}
+
+#ctf .folio-title {
+	color: #FFFFFF;
+	font-size: 3.3rem;
+	padding: 0 3rem;
+	margin-bottom: 0;
+}
+#ctf .folio-types {
+	margin: 0;
+	padding: 0;
+	text-transform: uppercase;
+	font-family: "poppins-regular", sans-serif;
+	font-size: 1.2rem;
+	letter-spacing: .1rem;
+	color: rgba(255, 255, 255, 0.6);
+}
+#ctf .folio-item:hover .overlay {
+	background: rgba(0, 0, 0, 0.8);
+}
+#ctf .folio-item:hover .folio-item-cell {
+	left: 0;
+}
+#ctf .folio-item:hover img {
+	-webkit-transform: scale(1.05);
+	-ms-transform: scale(1.05);
+	transform: scale(1.05);
+}
+
+/**
+ * responsive:
+ * ctf
+ * ------------------------------------------------------------------- 
+ */
+@media only screen and (max-width:1024px) {
+	#ctf .folio-title {
+		font-size: 3.1rem;
+	}
+}
+@media only screen and (max-width:768px) {
+	#ctf .folio-title {
+		font-size: 2.5rem;
+	}
+}
+@media only screen and (max-width:400px) {
+	#ctf .folio-title {
+		font-size: 2.2rem;
+	}
+}
+
 /**
  * Popup Modal - (_layout.scss)
  * ------------------------------------------------------------------
@@ -2069,7 +2176,7 @@ header{
 
 /** 
  * ===================================================================
- * 15. services - (_layout.scss)
+ * 16. services - (_layout.scss)
  *
  * ------------------------------------------------------------------- 
  */
@@ -2157,7 +2264,7 @@ header{
 
 /** 
  * ===================================================================
- * 16. stats - (_layout.scss)
+ * 17. stats - (_layout.scss)
  *
  * ------------------------------------------------------------------- 
  */
@@ -2224,7 +2331,7 @@ header{
 
 /** 
  * ===================================================================
- * 17. contact - (_layout.scss)
+ * 18. contact - (_layout.scss)
  *
  * ------------------------------------------------------------------- 
  */
@@ -2465,7 +2572,7 @@ header{
 
 /** 
  * ===================================================================
- * 18. footer - (_layout.scss)
+ * 19. footer - (_layout.scss)
  *
  * ------------------------------------------------------------------- 
  */
@@ -2547,6 +2654,7 @@ footer .copyright span:last-child::after {
 #certificate {
 	padding-top: 12rem;
 	padding-bottom: 12rem;
+	background: #FFFFFF;
 }
 
 #certificate .folio-item {
